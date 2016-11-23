@@ -1,0 +1,76 @@
+<?php if ( ! defined('ABSPATH')) exit; ?>
+    
+    <?php
+	// Carrega todos os métodos do modelo
+	$modelo->validate_register_form();
+	$modelo->get_register_form( chk_array( $parametros, 1 ) );
+	$modelo->del_cliente( $parametros );
+	?>
+    
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">                
+
+                    <div class="card">
+                        <div class="content">
+                            <div class="toolbar">
+                                <!--Here you can write extra buttons/actions for the toolbar-->
+                               	<h4 class="title" align="center"><b>Lista de Clientes</b> 
+                    				<a href="<?php echo HOME_URI ?>/cliente/cad/" class="btn btn-info btn-fill pull-right"><span class="ti-plus"></span></a>
+                    			</h4>
+                            </div>
+                            <div class="content table-full-width">
+                            	<?php 
+									// Lista os usuários
+									$lista = $modelo->get_cliente_list(); 
+							    ?>
+                                <table id="datatables" class="table table-striped table-hover" cellspacing="0" width="100%" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                        	<th>Cod.</th>
+                                            <th>Nome</th>
+                                            <th>Endereço</th>
+                                            <th>nº</th>
+                                            <th>Ramo</th>
+                                            <th class="disabled-sorting">Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                        	<th>Cod.</th>
+                                            <th>Nome</th>
+                                            <th>Endereço</th>
+                                            <th>nº</th>
+                                            <th>Ramo</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                    <?php foreach ($lista as $fetch_userdata): ?>
+                                        <tr>
+                                        	<td> <?php echo $fetch_userdata['cod_cli'] ?> </td>
+                                            <td> <?php echo $fetch_userdata['cli_nome'] ?> </td>
+                                            <td> <?php echo $fetch_userdata['cli_endereco'] ?> </td>
+                                            <td> <?php echo $fetch_userdata['cli_numero'] ?> </td>
+                                            <td> <?php echo $fetch_userdata['cli_ramoatividade'] ?> </td>
+                                            <td>
+                                                
+                                                <a href="<?php echo HOME_URI ?>/cliente/cad/edit/<?php echo $fetch_userdata['cod_cli'] ?>" class="btn btn-simple btn-warning btn-icon edit"><i class="ti-pencil-alt"></i></a>
+                                                <a href="<?php echo HOME_URI ?>/cliente/cad/del/<?php echo $fetch_userdata['cod_cli'] ?>" class="btn btn-simple btn-danger btn-icon remove"><i class="ti-close"></i></a>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach;?> 
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+                    </div><!--  end card  -->
+                </div> <!-- end col-md-12 -->
+            </div> <!-- end row -->
+        </div>
+    </div>
+    
+    <script src="<?php echo HOME_URI;?>/views/assets/js/jquery-1.10.2.js" type="text/javascript"></script>
