@@ -2,100 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7391b9cd-7819-4415-8431-dfcda39fdbca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_utilitarios/fluxograma.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_utilitarios/mvc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_utilitarios/tutsupMVC.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_utilitarios/tutsupmvc2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_uploads/additempng_681308151.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_uploads/cadastrarpng_93709829.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_uploads/face2jpg498379939jpg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_uploads/face2jpg_498379939.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_uploads/imagejpeg.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_uploads/img7340jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_uploads/img7340jpg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_uploads/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_uploads/userpng.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/Montserrat-Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/Montserrat-Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/Montserrat-ExtraBold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/Montserrat-Hairline.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/Montserrat-Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/Montserrat-Regular.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/Montserrat-SemiBold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/Montserrat-UltraLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/themify.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/themify.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/themify.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/img/apple-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/img/background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/img/faces/face-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/img/faces/face-22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/img/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/img/new_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/img/tim_80x80.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/financeiro.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_utilitarios/db.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class-MainController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class-MainModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class-PasswordHash.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class-TutsupDB.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class-TutsupMVC.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/class-UserLogin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/home-controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/login-controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/logout-controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/pessoas-controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/user-register-controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/global-functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/404.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/pessoas/cliente-model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/user-register/user-register-model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_includes/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_includes/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_js/html5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_js/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/css/paper-dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/css/themify-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/fonts/themify.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/bootstrap-checkbox-radio-switch-tags.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/bootstrap-table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/chartist.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/jquery-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/jquery.datatables.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/jquery.sharrre.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/paper-dashboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/sweetalert2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/configuracoes/configuracoes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/home/home-view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/login/login-view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/logout/logout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/pessoas-cad/cliente-cad.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/pessoas/cliente-lista.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user-register-cad/user-register-cad.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user-register/user-profile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user-register/user-register-view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/composerJson.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
     </list>
     <ignored path="financeiro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,8 +30,8 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -243,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479864045992</updated>
-      <workItem from="1479864047290" duration="405000" />
+      <workItem from="1479864047290" duration="884000" />
     </task>
     <task id="LOCAL-00001" summary="Início do projeto financeiro open source">
       <created>1479864217170</created>
@@ -252,11 +162,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479864217170</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Atualizando arquivos">
+      <created>1479864508296</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1479864508296</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="405000" />
+    <option name="totallyTimeSpent" value="884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -287,7 +204,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Início do projeto financeiro open source" />
-    <option name="LAST_COMMIT_MESSAGE" value="Início do projeto financeiro open source" />
+    <MESSAGE value="Atualizando arquivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizando arquivos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -296,8 +214,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding />
         </state>
       </provider>

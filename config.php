@@ -10,7 +10,7 @@ define( 'ABSPATH', dirname( __FILE__ ) );
 define( 'UP_ABSPATH', ABSPATH . '\views\_uploads' );
 
 // URL da home
-define( 'HOME_URI', 'http://localhost/financeiro' );
+define( 'HOME_URI', 'http://rpuglielli.com.br/financeiro' );
 
 // Nome do host da base de dados
 define( 'HOSTNAME', 'mysql.hostinger.com.br' );
