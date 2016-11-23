@@ -16,7 +16,7 @@ if ( $this->logged_in ) {
 	<link rel="icon" type="image/png" sizes="96x96" href="../../assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>(( Oil Smart )) Login</title>
+	<title>(( Financeiro )) Login</title>
 
 	<!-- Canonical SEO -->
     <link rel="canonical" href=""/>
@@ -49,7 +49,7 @@ if ( $this->logged_in ) {
                 <h3 class="title"><b>(( Oil Smart ))</b></h3>
             </div>
             <div class="" align="center">
-                <p class="content">Boa noite, seja bem vindo ao Oil Smart. Informe seu usuário e senha para prosseguir! :D</p>
+                <p class="content">Olá, seja bem vindo ao Financeiro. Informe seu usuário e senha para prosseguir! :D</p>
             </div>
         </div>
     </nav>
@@ -103,7 +103,7 @@ if ( $this->logged_in ) {
         	<footer class="footer footer-transparent">
                 <div class="container">
                     <div class="copyright">
-                        &copy; <script>document.write(new Date().getFullYear())</script> (( Oil Smart )) - todos os direitos reservados.
+                        &copy; <script>document.write(new Date().getFullYear())</script> (( RPuglielli )) - todos os direitos reservados.
                     </div>
                 </div>
             </footer>
