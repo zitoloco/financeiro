@@ -48,10 +48,6 @@ if ( $this->logged_in ) {
             <div class="" align="center">
                 <h3 class="title"><b>(( Financeiro ))</b></h3>
             </div>
-            <div class="" align="center">
-                <p class="content">Olá, seja bem vindo ao Financeiro. Informe seu usuário e senha para prosseguir! :D</p>
-                <br>
-            </div>
         </div>
     </nav>
 
