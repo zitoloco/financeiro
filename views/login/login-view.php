@@ -46,7 +46,7 @@ if ( $this->logged_in ) {
 	<nav class="navbar navbar-transparent navbar-absolute">
         <div class="container">
             <div class="" align="center">
-                <h3 class="title"><b>(( Oil Smart ))</b></h3>
+                <h3 class="title"><b>(( Financeiro ))</b></h3>
             </div>
             <div class="" align="center">
                 <p class="content">Olá, seja bem vindo ao Financeiro. Informe seu usuário e senha para prosseguir! :D</p>
