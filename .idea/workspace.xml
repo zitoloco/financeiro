@@ -1,54 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7391b9cd-7819-4415-8431-dfcda39fdbca" name="Default" comment="Atualizando arquivos">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/fornecedor-controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/receber-controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/fornecedor/fornecedor-model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/receber/receber-model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/bootstrap-datetimepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/jquery.mask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/moment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/fornecedor/fornecedor-cad.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/fornecedor/fornecedor-lista.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/receber/receber-cad.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/receber/receber-lista.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_utilitarios/db.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_utilitarios/fluxograma.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_utilitarios/mvc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_utilitarios/tutsupMVC.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_utilitarios/tutsupmvc2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/pessoas/cliente-model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/_js/html5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/_js/scripts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/configuracoes/configuracoes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/pessoas-cad/cliente-cad.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/pessoas/cliente-lista.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/classes/class-TutsupDB.php" afterPath="$PROJECT_DIR$/classes/class-RPuglielliDB.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/classes/class-TutsupMVC.php" afterPath="$PROJECT_DIR$/classes/class-RPuglielliMVC.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/pessoas-controller.php" afterPath="$PROJECT_DIR$/controllers/cliente-controller.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/includes/404.php" afterPath="$PROJECT_DIR$/views/_includes/404.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/financeiro.iml" afterPath="$PROJECT_DIR$/.idea/financeiro.iml" />
+    <list default="true" id="7391b9cd-7819-4415-8431-dfcda39fdbca" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_uploads/perfilpng.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/cliente/cliente-model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/assets/js/jquery.mask.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/cliente-cad.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/cliente-lista.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/class-MainController.php" afterPath="$PROJECT_DIR$/classes/class-MainController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/class-MainModel.php" afterPath="$PROJECT_DIR$/classes/class-MainModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/class-UserLogin.php" afterPath="$PROJECT_DIR$/classes/class-UserLogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/home-controller.php" afterPath="$PROJECT_DIR$/controllers/home-controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/login-controller.php" afterPath="$PROJECT_DIR$/controllers/login-controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/logout-controller.php" afterPath="$PROJECT_DIR$/controllers/logout-controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/user-register-controller.php" afterPath="$PROJECT_DIR$/controllers/user-register-controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions/global-functions.php" afterPath="$PROJECT_DIR$/functions/global-functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loader.php" afterPath="$PROJECT_DIR$/loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/user-register/user-register-model.php" afterPath="$PROJECT_DIR$/models/user-register/user-register-model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_includes/footer.php" afterPath="$PROJECT_DIR$/views/_includes/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_includes/header.php" afterPath="$PROJECT_DIR$/views/_includes/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/assets/css/paper-dashboard.css" afterPath="$PROJECT_DIR$/views/assets/css/paper-dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/assets/js/demo.js" afterPath="$PROJECT_DIR$/views/assets/js/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user-register-cad/user-register-cad.php" afterPath="$PROJECT_DIR$/views/user-register-cad/user-register-cad.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user-register/user-profile.php" afterPath="$PROJECT_DIR$/views/user-register/user-profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user-register/user-register-view.php" afterPath="$PROJECT_DIR$/views/user-register/user-register-view.php" />
     </list>
     <ignored path="financeiro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -304,7 +263,8 @@
       <workItem from="1480884078723" duration="4000" />
       <workItem from="1480884231780" duration="2000" />
       <workItem from="1480935957363" duration="37000" />
-      <workItem from="1480976597828" duration="93000" />
+      <workItem from="1480976597828" duration="170000" />
+      <workItem from="1480980021768" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="Início do projeto financeiro open source">
       <created>1479864217170</created>
@@ -355,23 +315,30 @@
       <option name="project" value="LOCAL" />
       <updated>1479865420077</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Atualização.">
+      <created>1480976748198</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1480976748198</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29831000" />
+    <option name="totallyTimeSpent" value="29937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="754" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1923664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19541985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -402,7 +369,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Início do projeto financeiro open source" />
     <MESSAGE value="Atualizando arquivos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizando arquivos" />
+    <MESSAGE value="Atualização." />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualização." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
