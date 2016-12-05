@@ -5,8 +5,7 @@
  * Manipula os dados de usuários, faz login e logout, verifica permissões e 
  * redireciona página para usuários logados.
  *
- * @package TutsupMVC
- * @since 0.1
+ * @package RPuglielliMVC
  */
 class UserLogin
 {
@@ -234,7 +233,7 @@ class UserLogin
 	/**
 	 * Logout
 	 *
-	 * Desconfigura tudo do usuárui.
+	 * Desconfigura tudo do usuário.
 	 *
 	 * @param bool $redirect Se verdadeiro, redireciona para a página de login
 	 * @final

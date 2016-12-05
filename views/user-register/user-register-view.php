@@ -42,7 +42,7 @@ $modelo->del_user( $parametros );
                         
                                                 <td> <?php echo $fetch_userdata['user_id'] ?> </td>
                                                 <td> <?php echo $fetch_userdata['user'] ?> </td>
-                                                <td> <?php echo $fetch_userdata['user_name'] ?> </td>
+                                                <td> <?php echo $fetch_userdata['name'] ?> </td>
                                                 <td> <?php echo implode( ',', unserialize( $fetch_userdata['user_permissions'] ) ) ?> </td>
                                                 <td>
                                                     <a href="<?php echo HOME_URI ?>/user-register/cad/edit/<?php echo $fetch_userdata['user_id'] ?>" class="btn btn-simple btn-warning btn-icon edit"><i class="ti-pencil-alt"></i></a>

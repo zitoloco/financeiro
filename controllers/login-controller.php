@@ -2,7 +2,7 @@
 /**
  * LoginController - Controller de exemplo
  *
- * @package TutsupMVC
+ * @package RPuglielliMVC
  * @since 0.1
  */
 class LoginController extends MainController

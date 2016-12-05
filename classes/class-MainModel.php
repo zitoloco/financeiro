@@ -4,8 +4,7 @@
  *
  * 
  *
- * @package TutsupMVC
- * @since 0.1
+ * @package RPuglielliMVC
  */
 class MainModel
 {

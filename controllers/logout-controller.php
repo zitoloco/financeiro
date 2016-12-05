@@ -2,8 +2,7 @@
 /**
  * LogoutController - Controller de exemplo
  *
- * @package RP
- * @since 0.1
+ * @package RPuglielliMVC
  */
 class LogoutController extends MainController
 {

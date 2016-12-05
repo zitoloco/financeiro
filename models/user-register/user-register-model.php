@@ -2,8 +2,7 @@
 /**
  * Classe para registros de usuários
  *
- * @package TutsupMVC
- * @since 0.1
+ * @package RPuglielliMVC
  */
 
 class UserRegisterModel
@@ -188,7 +187,7 @@ class UserRegisterModel
 
 			$query = $this->db->update('users', 'user_id', $user_id, array(
 				'user_password' => $password, 
-				'user_name' => chk_array( $this->form_data, 'user_name'), 
+				'name' => chk_array( $this->form_data, 'name'),
 				'user_session_id' => md5(time(999)), 
 				'user_permissions' => $permissions,
 				'user_photo' => $imagem
@@ -222,7 +221,7 @@ class UserRegisterModel
 			$query = $this->db->insert('users', array(
 				'user' => chk_array( $this->form_data, 'user'), 
 				'user_password' => $password, 
-				'user_name' => chk_array( $this->form_data, 'user_name'), 
+				'name' => chk_array( $this->form_data, 'name'), 
 				'user_session_id' => md5(time()), 
 				'user_permissions' => $permissions, 
 				'user_photo' => $imagem

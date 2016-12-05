@@ -3,7 +3,7 @@
 	<footer class="footer">
                 <div class="container-fluid">
                     <div class="copyright pull-right">
-                        &copy; <script>document.write(new Date().getFullYear())</script> (( Oil Smart ))</a>
+                        &copy; <script>document.write(new Date().getFullYear())</script> (( Financeiro )) Desenvolvido por RPuglielli</a>
                     </div>
                 </div>
             </footer>
@@ -13,7 +13,6 @@
 </body>
 
     <!--   Core JS Files. Extra: PerfectScrollbar + TouchPunch libraries inside jquery-ui.min.js   -->
-    <script src="<?php echo HOME_URI;?>/views/assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="<?php echo HOME_URI;?>/views/assets/js/jquery-ui.min.js" type="text/javascript"></script>
 	<script src="<?php echo HOME_URI;?>/views/assets/js/bootstrap.min.js" type="text/javascript"></script>
 

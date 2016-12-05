@@ -20,26 +20,38 @@ function chk_array ( $array, $key ) {
 } // chk_array
 
 /**
- * Realiza a conversão de datas
+ * Verfica o formato da data e realiza a conversão.
  *
- * Verifica se a data está em formato de gravação ou vice-versa e converte.
- *
+ * @param $data
+ * @return string
  */
 function converteData($data){
-       if (strstr($data, "/")){//verifica se tem a barra /
-           $d = explode ("/", $data);//tira a barra
-           $rstData = "$d[2]-$d[1]-$d[0]";//separa as datas $d[2] = ano $d[1] = mes etc...
-           return $rstData;
-       }
-       else if(strstr($data, "-")){
-          $data = substr($data, 0, 10);
-          $d = explode ("-", $data);
-          $rstData = "$d[2]/$d[1]/$d[0]";
-          return $rstData;
-       }
-       else{
-           return '';
-      }
+    if (strstr($data, "/")){//verifica se tem a barra /
+        $d = explode ("/", $data);//tira a barra
+        $rstData = "$d[2]-$d[1]-$d[0]";//separa as datas $d[2] = ano $d[1] = mes etc...
+        return $rstData;
+    }
+    else if(strstr($data, "-")){
+        $data = substr($data, 0, 10);
+        $d = explode ("-", $data);
+        $rstData = "$d[2]/$d[1]/$d[0]";
+        return $rstData;
+    }
+    else{
+        return '';
+    }
+}
+
+/**
+ * Função para remover traços e pontos.
+ *
+ * @param string $data
+ * @return mixed|string
+ */
+function tracosEPontos($data=''){
+    $tracosepontos = array(".","-");
+    $data = str_replace($tracosepontos,"",$data);
+    return $data;
 }
 
 /**

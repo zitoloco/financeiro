@@ -2,8 +2,7 @@
 /**
  * MainController - Todos os controllers deverão estender essa classe
  *
- * @package TutsupMVC
- * @since 0.1
+ * @package RPuglielliMVC
  */
 class MainController extends UserLogin
 {
@@ -72,7 +71,7 @@ class MainController extends UserLogin
 	public function __construct ( $parametros = array() ) {
 	
 		// Instancia do DB
-		$this->db = new TutsupDB();
+		$this->db = new RPuglielliDB();
 		
 		// Phpass
 		$this->phpass = new PasswordHash(8, false);

@@ -1,10 +1,10 @@
 <?php
 /**
- * UserRegisterController - Controller de exemplo
+ * ClienteController
  *
  * @package RPuglielliMVC
  */
-class UserRegisterController extends MainController
+class ClienteController extends MainController
 {
 
 	/**
@@ -30,7 +30,7 @@ class UserRegisterController extends MainController
 	 */
     public function index() {
 		// Page title
-		$this->title = 'User Register';
+		$this->title = 'Clientes';
 		
 		// Verifica se o usuário está logado
 		if ( ! $this->logged_in ) {
@@ -60,18 +60,15 @@ class UserRegisterController extends MainController
 		$parametros = ( func_num_args() >= 1 ) ? func_get_arg(0) : array();
 	
 		// Carrega o modelo para este view
-        $modelo = $this->load_model('user-register/user-register-model');
+        $modelo = $this->load_model('cliente/cliente-model');
 				
 		/** Carrega os arquivos do view **/
 		
 		// /views/_includes/header.php
         require ABSPATH . '/views/_includes/header.php';
 		
-		// /views/_includes/menu.php
-        //require ABSPATH . '/views/_includes/menu.php';
-		
 		// /views/user-register/index.php
-        require ABSPATH . '/views/user-register/user-register-view.php';
+        require ABSPATH . '/views/cliente/cliente-lista.php';
 		
 		// /views/_includes/footer.php
         require ABSPATH . '/views/_includes/footer.php';
@@ -80,7 +77,7 @@ class UserRegisterController extends MainController
 	
 	public function cad() {
 		// Page title
-		$this->title = 'User Register';
+		$this->title = 'Clientes';
 		
 		// Verifica se o usuário está logado
 		if ( ! $this->logged_in ) {
@@ -110,68 +107,15 @@ class UserRegisterController extends MainController
 		$parametros = ( func_num_args() >= 1 ) ? func_get_arg(0) : array();
 	
 		// Carrega o modelo para este view
-        $modelo = $this->load_model('user-register/user-register-model');
+        $modelo = $this->load_model('cliente/cliente-model');
 				
 		/** Carrega os arquivos do view **/
 		
 		// /views/_includes/header.php
         require ABSPATH . '/views/_includes/header.php';
-		
-		// /views/_includes/menu.php
-        //require ABSPATH . '/views/_includes/menu.php';
 		
 		// /views/user-register/index.php
-        require ABSPATH . '/views/user-register-cad/user-register-cad.php';
-		
-		// /views/_includes/footer.php
-        require ABSPATH . '/views/_includes/footer.php';
-		
-    } // index
-	
-	public function profile() {
-		// Título da pagina
-		$this->title = 'Perfil de Usuário';
-		
-		// Verifica se o usuário está logado
-		if ( ! $this->logged_in ) {
-		
-			// Se não; garante o logout
-			$this->logout();
-			
-			// Redireciona para a página de login
-			$this->goto_login();
-			
-			// Garante que o script não vai passar daqui
-			return;
-		
-		}
-		
-		// Verifica se o usuário tem a permissão para acessar essa página
-		if (!$this->check_permissions($this->permission_required, $this->userdata['user_permissions'])) {
-		
-			// Exibe uma mensagem
-			echo 'Você não tem permissões para acessar essa página.';
-			
-			// Finaliza aqui
-			return;
-		}
-	
-		// Parametros da função
-		$parametros = ( func_num_args() >= 1 ) ? func_get_arg(0) : array();
-	
-		// Carrega o modelo para este view
-        $modelo = $this->load_model('user-register/user-register-model');
-				
-		/** Carrega os arquivos do view **/
-		
-		// /views/_includes/header.php
-        require ABSPATH . '/views/_includes/header.php';
-		
-		// /views/_includes/menu.php
-        //require ABSPATH . '/views/_includes/menu.php';
-		
-		// /views/user-register/user-profile.php
-        require ABSPATH . '/views/user-register/user-profile.php';
+        require ABSPATH . '/views/cliente/cliente-cad.php';
 		
 		// /views/_includes/footer.php
         require ABSPATH . '/views/_includes/footer.php';

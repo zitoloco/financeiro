@@ -24,7 +24,7 @@ if ( ! $this->logged_in ) {
 	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo HOME_URI; ?>/views/assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>(( Oil Smart ))</title>
+	<title>(( Financeiro ))</title>
 
 	<!-- Canonical SEO -->
     <link rel="canonical" href="<?php echo HOME_URI; ?>"/>
@@ -56,12 +56,12 @@ if ( ! $this->logged_in ) {
 	    <div class="sidebar" data-background-color="brown" data-active-color="info">
 			<div class="logo">
 				<a href="<?php echo HOME_URI; ?>" class="simple-text">
-					(( Oil Smart ))
+					(( Financeiro ))
 				</a>
 			</div>
 			<div class="logo logo-mini">
 				<a href="<?php echo HOME_URI; ?>" class="simple-text">
-					OS
+					RP
 				</a>
 			</div>
 	    	<div class="sidebar-wrapper">
@@ -71,7 +71,7 @@ if ( ! $this->logged_in ) {
 	                </div>
 	                <div class="info">
 	                    <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-	                        <?php echo $this->userdata['user_name']; ?>
+	                        <?php echo $this->userdata['name']; ?>
 	                        <b class="caret"></b>
 	                    </a>
 	                    <div class="collapse" id="collapseExample">
@@ -84,17 +84,17 @@ if ( ! $this->logged_in ) {
 	                </div>
 	            </div>
 	            <ul class="nav">
-	                <li class="active">
-	                    <a data-toggle="collapse" href="#dashboardOverview" aria-expanded="true">
+	                <li>
+	                    <a data-toggle="collapse" href="#dashboardOverview">
 	                        <i class="ti-panel"></i>
 	                        <p>Dashboards
                                 <b class="caret"></b>
                             </p>
 	                    </a>
-                        <div class="collapse in" id="dashboardOverview">
+                        <div class="collapse" id="dashboardOverview">
 							<ul class="nav">
-								<li class="active"><a href="<?php echo HOME_URI;?>">Estatísticas</a></li>
-								<li><a href="stats.html">Gráficos</a></li>
+								<li><a href="">Estatísticas</a></li>
+								<li><a href="">Gráficos</a></li>
 							</ul>
 						</div>
 	                </li>
@@ -108,15 +108,8 @@ if ( ! $this->logged_in ) {
 	                    </a>
 	                    <div class="collapse" id="formsExamples">
 	                        <ul class="nav">
-								<li><a href="<?php echo HOME_URI;?>/cliente">Cliente</a></li>
-                                <li><a href="<?php echo HOME_URI;?>/">Cidade</a></li>
-                                <li><a href="<?php echo HOME_URI;?>/">Tipo de Veículo</a></li>
-                                <li><a href="<?php echo HOME_URI;?>/veiculo">Veículo</a></li>
-                                <li><a href="<?php echo HOME_URI;?>/">Marca</a></li>
-                                <li><a href="<?php echo HOME_URI;?>/">Tipo de Produto</a></li>
-                                <li><a href="<?php echo HOME_URI;?>/">Produto</a></li>
-                                <li><a href="<?php echo HOME_URI;?>/">Mensagem</a></li>
-                                <li><a href="<?php echo HOME_URI;?>/user-register">Usuário</a></li>
+								<li><a href="cliente">Cliente</a></li>
+                                <li><a href="fornecedor">Fornecedor</a></li>
 	                        </ul>
 	                    </div>
 	                </li>
@@ -124,25 +117,25 @@ if ( ! $this->logged_in ) {
 						<a data-toggle="collapse" href="#tablesExamples">
 	                        <i class="ti-control-play"></i>
 	                        <p>
-								Processos
+								Lançamentos
 	                           <b class="caret"></b>
 	                        </p>
 	                    </a>
 	                    <div class="collapse" id="tablesExamples">
 	                        <ul class="nav">
-								<li><a href="../tables/regular.html">Ordem de Serviço</a></li>
-								<li><a href="../tables/extended.html">Envio de Mensagem</a></li>
+								<li><a href="receber">Contas a Receber</a></li>
+								<li><a href="pagar">Contas a Pagar</a></li>
 	                        </ul>
 	                    </div>
 	                </li>
 					<li>
-	                    <a href="../charts.html">
+	                    <a href="">
 	                        <i class="ti-bar-chart-alt"></i>
 	                        <p>Relatórios</p>
 	                    </a>
 	                </li>
 					<li>
-	                    <a href="<?php echo HOME_URI;?>/configuracoes">
+	                    <a href="configuracoes">
 	                        <i class="ti-settings"></i>
 	                        <p>Configuração</p>
 	                    </a>
@@ -165,7 +158,7 @@ if ( ! $this->logged_in ) {
 	                        <span class="icon-bar bar3"></span>
 	                    </button>
 	                    <a class="navbar-brand" href="<?php echo HOME_URI ?>">
-							(( Oil Smart ))
+
 						</a>
 	                </div>
 	                <div class="collapse navbar-collapse">
@@ -202,7 +195,7 @@ if ( ! $this->logged_in ) {
 	                            </ul>
 	                        </li>
 							<li>
-	                            <a href="<?php echo HOME_URI;?>/configuracoes" class="btn-rotate">
+	                            <a href="#" class="btn-rotate">
 									<i class="ti-settings"></i>
 									<p class="hidden-md hidden-lg">
 										Settings
@@ -213,4 +206,8 @@ if ( ! $this->logged_in ) {
 	                </div>
 	            </div>
 	        </nav>
-            
+
+			<!-- JQuery Core! -->
+			<script src="<?php echo HOME_URI;?>/views/assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+			<!-- JQuery Mask JS! -->
+			<script src="<?php echo HOME_URI;?>/views/assets/js/jquery.mask.min.js"></script>

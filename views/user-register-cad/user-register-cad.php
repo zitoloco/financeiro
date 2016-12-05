@@ -48,8 +48,8 @@ $modelo->del_user( $parametros );
                                     <div class="col-sm-4 col-sm-offset-4">
                                         <div class="form-group">
                                             <label><span>(*)</span> Nome</label>
-                                            <input type="text" id="user_name" name="user_name" required="required" class="form-control border-input" value="<?php 
-                        echo htmlentities( chk_array( $modelo->form_data, 'user_name') );
+                                            <input type="text" id="name" name="name" required="required" class="form-control border-input" value="<?php
+                        echo htmlentities( chk_array( $modelo->form_data, 'name') );
                     ?>">
                                         </div>
                                     </div>

@@ -1,11 +1,10 @@
 <?php
 /**
- * TutsupMVC - Gerencia Models, Controllers e Views
+ * RPuglielliMVC - Gerencia Models, Controllers e Views
  *
- * @package TutsupMVC
- * @since 0.1
+ * @package RPuglielliMVC
  */
-class TutsupMVC
+class RPuglielliMVC
 {
 
 	/**
@@ -45,7 +44,7 @@ class TutsupMVC
 	 *
 	 * @access private
 	 */
-	private $not_found = '/includes/404.php';
+	private $not_found = '/views/_includes/404.php';
 	
 	/**
 	 * Construtor para essa classe
@@ -185,4 +184,4 @@ class TutsupMVC
 	
 	} // get_url_data
 	
-} // class TutsupMVC
+} // class RPuglielliMVC

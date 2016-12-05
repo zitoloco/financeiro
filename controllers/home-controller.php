@@ -2,7 +2,7 @@
 /**
  * home - Controller de exemplo
  *
- * @package TutsupMVC
+ * @package RPuglielliMVC
  * @since 0.1
  */
 class HomeController extends MainController

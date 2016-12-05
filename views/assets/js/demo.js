@@ -37,23 +37,6 @@ $().ready(function(){
 		}
 	});
 
-
-	var table = $('#datatables').DataTable();
-	 /* Edit record
-	 table.on( 'click', '.edit', function () {
-		$tr = $(this).closest('tr');
-
-		var data = table.row($tr).data();
-		alert( 'You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.' );
-	 } );*/
-
-	 /* Delete a record
-	 table.on( 'click', '.remove', function (e) {
-		$tr = $(this).closest('tr');
-		table.row($tr).remove().draw();
-		e.preventDefault();
-	 } );*/
-
     $('.fixed-plugin a').click(function(event){
       // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
         if($(this).hasClass('switch-trigger')){
@@ -704,7 +687,7 @@ demo = {
          });
 
          $('.datepicker').datetimepicker({
-            format: 'MM/DD/YYYY',    //use this format if you want the 12hours timpiecker with AM/PM toggle
+            format: 'DD/MM/YYYY',    //use this format if you want the 12hours timpiecker with AM/PM toggle
             icons: {
                 time: "fa fa-clock-o",
                 date: "fa fa-calendar",

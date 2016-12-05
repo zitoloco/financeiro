@@ -1,11 +1,10 @@
 <?php
 /**
- * clienteController - Controller de exemplo
+ * ClienteController
  *
- * @package TutsupMVC
- * @since 0.1
+ * @package RPuglielliMVC
  */
-class ClienteController extends MainController
+class ReceberController extends MainController
 {
 
 	/**
@@ -31,7 +30,7 @@ class ClienteController extends MainController
 	 */
     public function index() {
 		// Page title
-		$this->title = 'Clientes';
+		$this->title = 'Contas a Receber';
 		
 		// Verifica se o usuário está logado
 		if ( ! $this->logged_in ) {
@@ -61,7 +60,7 @@ class ClienteController extends MainController
 		$parametros = ( func_num_args() >= 1 ) ? func_get_arg(0) : array();
 	
 		// Carrega o modelo para este view
-        $modelo = $this->load_model('cliente/cliente-model');
+        $modelo = $this->load_model('receber/receber-model');
 				
 		/** Carrega os arquivos do view **/
 		
@@ -69,7 +68,7 @@ class ClienteController extends MainController
         require ABSPATH . '/views/_includes/header.php';
 		
 		// /views/user-register/index.php
-        require ABSPATH . '/views/cliente/cliente-lista.php';
+        require ABSPATH . '/views/receber/receber-lista.php';
 		
 		// /views/_includes/footer.php
         require ABSPATH . '/views/_includes/footer.php';
@@ -78,7 +77,7 @@ class ClienteController extends MainController
 	
 	public function cad() {
 		// Page title
-		$this->title = 'Clientes';
+		$this->title = 'Conta a Receber';
 		
 		// Verifica se o usuário está logado
 		if ( ! $this->logged_in ) {
@@ -108,7 +107,7 @@ class ClienteController extends MainController
 		$parametros = ( func_num_args() >= 1 ) ? func_get_arg(0) : array();
 	
 		// Carrega o modelo para este view
-        $modelo = $this->load_model('cliente/cliente-model');
+        $modelo = $this->load_model('receber/receber-model');
 				
 		/** Carrega os arquivos do view **/
 		
@@ -116,7 +115,7 @@ class ClienteController extends MainController
         require ABSPATH . '/views/_includes/header.php';
 		
 		// /views/user-register/index.php
-        require ABSPATH . '/views/cliente-cad/cliente-cad.php';
+        require ABSPATH . '/views/receber/receber-cad.php';
 		
 		// /views/_includes/footer.php
         require ABSPATH . '/views/_includes/footer.php';

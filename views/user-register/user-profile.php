@@ -80,7 +80,7 @@ $modelo->del_user( $parametros );
 	                            <div class="content">
 	                                <div class="author">
 	                                  <img class="avatar border-white" src="<?php echo HOME_URI.'/views/_uploads/'.$this->userdata['user_photo'];?>" alt="..."/>
-	                                  <h4 class="title"><?php echo $this->userdata['user_name']; ?><br />
+	                                  <h4 class="title"><?php echo $this->userdata['name']; ?><br />
 	                                     <a href="#"><small>@<?php echo $this->userdata['user']; ?></small></a>
 	                                  </h4>
 	                                </div>
