@@ -44,8 +44,7 @@ class ReceberModel
 	/**
 	 * Valida o formulário de envio
 	 * 
-	 * Este método pode inserir ou atualizar dados dependendo do campo de
-	 * usuário.
+	 * Este método pode inserir ou atualizar dados.
 	 */
 	public function validate_register_form () {
 	
@@ -77,16 +76,16 @@ class ReceberModel
 			return;
 		}
 		
-		// Verifica se o cliente existe
-		$db_check_forn = $this->db->query (
-			'SELECT * FROM `pessoa` WHERE `idPessoa` = ?',
+		// Verifica se o registro existe
+		$db_check_data = $this->db->query (
+			'SELECT * FROM `contas` WHERE `idConta` = ?',
 			array( 
 				chk_array( $this->form_data, 'id')
 			) 
 		);
 		
 		// Verifica se a consulta foi realizada com sucesso
-		if ( ! $db_check_forn ) {
+		if ( ! $db_check_data ) {
 			$this->form_msg = '<div class="alert alert-danger" role="alert" align="center">
 									<button type="button" aria-hidden="true" class="close" data-dismiss="alert">×</button>
 									<span><b> Não foi possível realizar a consulta. </b></span>
@@ -95,36 +94,28 @@ class ReceberModel
 		}
 		
 		// Obtém os dados da base de dados MySQL
-		$fetch_cliente = $db_check_forn->fetch();
+		$fetch_data = $db_check_data->fetch();
 		
-		// Configura o ID do cliente
-		$fornecedor_id = $fetch_cliente['idPessoa'];
+		// Configura o ID da tabela
+		$data_id = $fetch_data['idConta'];
 
 		// Array com dados do formulario
         $arrayData = array(
-            'nome'           => chk_array( $this->form_data, 'nome'),
-            'cpf'            => tracosEPontos( chk_array( $this->form_data, 'cpf') ),
-            'cnpj'           => tracosEPontos( chk_array( $this->form_data, 'cnpj') ),
-            'rg'             => tracosEPontos( chk_array( $this->form_data, 'rg') ),
-            'inscricao'      => tracosEPontos( chk_array( $this->form_data, 'inscricao') ),
-            'telefone'       => tracosEPontos( chk_array( $this->form_data, 'telefone') ),
-            'celular'        => tracosEPontos( chk_array( $this->form_data, 'celular') ),
-            'sexo'           => chk_array( $this->form_data, 'sexo'),
-            'dataNascimento' => converteData( chk_array( $this->form_data, 'dataNascimento') ),
-            'cep'            => tracosEPontos(chk_array( $this->form_data, 'cep')),
-            'logradouro'     => chk_array( $this->form_data, 'logradouro'),
-            'numero'         => chk_array( $this->form_data, 'numero'),
-            'complemento'    => chk_array( $this->form_data, 'complemento'),
-            'bairro'         => chk_array( $this->form_data, 'bairro'),
-            'uf'             => chk_array( $this->form_data, 'uf'),
-            'cidade'         => tracosEPontos(chk_array( $this->form_data, 'cidade')),
-            'tipo'           => 'fornecedor'
+            'idPessoa'        => chk_array( $this->form_data, 'idPessoa'),
+            'dataCriacao'     => converteData( chk_array( $this->form_data, 'dataCriacao') ),
+            'dataVencimento'  => converteData( chk_array( $this->form_data, 'dataVencimento') ),
+            'dataPagamento'   => converteData( chk_array( $this->form_data, 'dataPagamento') ),
+            'tipo'            => tracosEPontos( chk_array( $this->form_data, 'tipo') ),
+            'historico'       => chk_array( $this->form_data, 'historico'),
+            'valor'           => number_format( chk_array( $this->form_data, 'valor') , 2 ,'.',''),
+            'valorPago'       => number_format( chk_array( $this->form_data, 'valorPago') , 2 ,'.',''),
+            'tipo'            => 'receber'
         );
 		
-		// Se o ID do usuário não estiver vazio, atualiza os dados
-		if ( ! empty($fornecedor_id) ) {
+		// Se o ID não estiver vazio, atualiza os dados
+		if ( ! empty($data_id) ) {
 
-			$query = $this->db->update('pessoa', 'idPessoa', $fornecedor_id, $arrayData);
+			$query = $this->db->update('contas', 'idConta', $data_id, $arrayData);
 			
 			// Verifica se a consulta está OK e configura a mensagem
 			if ( ! $query ) {
@@ -143,11 +134,11 @@ class ReceberModel
 				// Termina
 				return;
 			}
-		// Se o ID do cliente estiver vazio, insere os dados
+		// Se o ID estiver vazio, insere os dados
 		} else {
 		
 			// Executa a inserção 
-			$query = $this->db->insert('pessoa', $arrayData);
+			$query = $this->db->insert('contas', $arrayData);
 			
 			// Verifica se a inserção está OK e configura a mensagem
 			if ( ! $query ) {
@@ -161,15 +152,15 @@ class ReceberModel
 			} else {
 
                 // Faz a consulta para obter o valor
-                $consulta_ult_cli = $this->db->query(
-                    'select idPessoa from pessoa order by idPessoa desc limit 1'
+                $consulta_ult_reg = $this->db->query(
+                    'SELECT idConta FROM contas ORDER BY idConta DESC LIMIT 1'
                 );
 
                 // Obtém os dados
-                $ultimo_reg= $consulta_ult_cli->fetch();
+                $ultimo_reg= $consulta_ult_reg->fetch();
 
                 // Configura os dados do formulário
-                $this->form_data = $ultimo_reg[0];
+                $this->form_data = $ultimo_reg;
                 $this->form_msg = '<script>
 								   		swal("Dados inseridos com sucesso!", "", "success")
 								   </script>';
@@ -182,29 +173,29 @@ class ReceberModel
 	/**
 	 ** Busca dados do formulário
 	 **/
-	public function get_register_form ( $fornecedor_id = false ) {
+	public function get_register_form ( $reg_id = false ) {
 	
 		// O ID de usuário que vamos pesquisar
-		$s_fornecedor_id = false;
+		$s_reg_id = false;
 		
 		// Verifica se você enviou algum ID para o método
-		if ( ! empty( $fornecedor_id ) ) {
-            $s_fornecedor_id = (int)$fornecedor_id;
+		if ( ! empty( $reg_id ) ) {
+            $s_reg_id = (int)$s_reg_id;
 		}
 		
 		// Verifica se existe um ID de cliente
-		if ( empty( $s_fornecedor_id ) ) {
+		if ( empty( $s_reg_id ) ) {
 			return;
 		}
 		
 		// Verifica na base de dados
-		$query = $this->db->query('SELECT * FROM `pessoa` WHERE `idPessoa` = ? LIMIT 1', array( $s_fornecedor_id ));
+		$query = $this->db->query('SELECT * FROM `contas` WHERE `idConta` = ? LIMIT 1', array( $s_reg_id ));
 		
 		// Verifica a consulta
 		if ( ! $query ) {
 			$this->form_msg = '<div class="alert alert-danger" role="alert" align="center">
 									<button type="button" aria-hidden="true" class="close" data-dismiss="alert">×</button>
-									<span><b> Fornecedor não existe. </b></span>
+									<span><b> Registro não existe. </b></span>
 							   </div>';
 			return;
 		}
@@ -216,7 +207,7 @@ class ReceberModel
 		if ( empty( $fetch_data ) ) {
 			$this->form_msg = '<div class="alert alert-danger" role="alert" align="center">
 									<button type="button" aria-hidden="true" class="close" data-dismiss="alert">×</button>
-									<span><b> Fornecedor não existe. </b></span>
+									<span><b> Registro não existe. </b></span>
 							   </div>';
 			return;
 		}
@@ -228,12 +219,12 @@ class ReceberModel
 	}
 	
 	/**
-	 ** Apaga fornecedor
+	 ** Apaga Registro
 	 **/
-	public function del_fornecedor ( $parametros = array() ) {
+	public function del_receber ( $parametros = array() ) {
 
 		// O ID do usuário
-		$fornecedor_id = null;
+		$receber_id = null;
 		
 		// Verifica se existe o parâmetro "del" na URL
 		if ( chk_array( $parametros, 0 ) == 'del' ) {
@@ -253,7 +244,7 @@ class ReceberModel
                                             if (isConfirm) {
                                                 window.location.assign("' . $_SERVER['REQUEST_URI'] . '/confirma");
                                             } else {
-                                                window.location.assign("' . HOME_URI . '/cliente/");
+                                                window.location.assign("' . HOME_URI . '/receber/");
                                             }
                                         });
                                    </script>';
@@ -264,33 +255,33 @@ class ReceberModel
 				&& chk_array( $parametros, 2 ) == 'confirma' 
 			) {
 				// Configura o ID do cliente a ser apagado
-                $fornecedor_id = chk_array( $parametros, 1 );
+                $receber_id = chk_array( $parametros, 1 );
 			}
 		}
 		
 		// Verifica se o ID não está vazio
-		if ( !empty( $fornecedor_id ) ) {
+		if ( !empty( $receber_id ) ) {
 		
 			// O ID precisa ser inteiro
-            $fornecedor_id = (int)$fornecedor_id;
+            $receber_id = (int)$receber_id;
 			
 			// Deleta o cliente
-			$query = $this->db->delete('pessoa', 'idPessoa', $fornecedor_id);
+			$query = $this->db->delete('receber', 'idConta', $receber_id);
 			
 			// Redireciona para a página de registros
-			echo '<meta http-equiv="Refresh" content="0; url=' . HOME_URI . '/fornecedor/">';
-			echo '<script type="text/javascript">window.location.href = "' . HOME_URI . '/fornecedor/";</script>';
+			echo '<meta http-equiv="Refresh" content="0; url=' . HOME_URI . '/receber/">';
+			echo '<script type="text/javascript">window.location.href = "' . HOME_URI . '/receber/";</script>';
 			return;
 		}
 	}
 	
 	/**
-	 ** Lista clientes
+	 ** Lista contas a receber
 	 **/
-	public function getFornecedores() {
+	public function getReceber() {
 	
 		// Simplesmente seleciona os dados na base de dados 
-		$query = $this->db->query('SELECT * FROM `pessoa` WHERE tipo = "fornecedor" ORDER BY idPessoa DESC');
+		$query = $this->db->query('SELECT * FROM `contas` WHERE tipo = "receber" ORDER BY idConta DESC');
 		
 		// Verifica se a consulta está OK
 		if ( ! $query ) {
